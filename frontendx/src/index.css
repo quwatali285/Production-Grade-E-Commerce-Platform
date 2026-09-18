@@ -1,0 +1,137 @@
+@import "tailwindcss";
+ 
+
+.dark-table .p-datatable-header {
+    background-color: #27272a !important; /* zinc-800 */
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+
+
+/* header */
+.dark-table .p-datatable-thead > tr > th {
+    background-color: #18181b !important; /* zinc-900 */
+    color: white !important;
+    border: 1px solid white !important;
+}
+.dark-table order-table .p-datatable-tbody > tr > td{
+    border: 2px solid blue;
+}
+/* body */
+.dark-table .p-datatable-tbody > tr > td {
+    @apply bg-zinc-800 py-0  border-[1px] border-white text-white 
+    
+}
+
+.products-table .p-datatable-tbody > tr > td {
+    height: 80px;
+    @apply  w-auto  
+}
+
+
+/* hover */
+.dark-table .p-datatable-tbody > tr:hover {
+    background-color: #3f3f46 !important;
+}
+
+/* paginator */
+.dark-table .p-paginator {
+    background-color: #18181b !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+.dark-table .p-inputtext {
+   @apply bg-zinc-800 !outline-none
+}
+.data-table  .p-inputtext-sm{
+   @apply outline-none
+}
+.p-inputtext.p-inputtext-sm{
+    @apply bg-zinc-800 outline-none text-white shadow-none border-zinc-500
+}
+ 
+.p-button.p-button-secondary{
+  @apply bg-rose-600 shadow-none
+}
+
+/* Paginator container */
+.dark-table .p-paginator {
+    background-color: #27272a !important; /* zinc-800 */
+    border-top: 1px solid white !important;
+}
+
+.p-button.p-button-info{
+    @apply bg-transparent text-yellow-500 border-none
+}
+
+.p-button.p-button-warning {
+    @apply bg-transparent text-blue-500 border-none
+}
+
+.p-button.p-button-danger{
+    @apply bg-transparent text-red-500 border-none
+}
+/* ALL paginator buttons */
+.dark-table .p-paginator .p-paginator-page{
+  @apply bg-rose-500 text-white 
+}
+
+/* hover effect */
+.dark-table .p-paginator .p-paginator-page:hover,
+.dark-table .p-paginator .p-paginator-prev:hover,
+.dark-table .p-paginator .p-paginator-next:hover {
+    background-color: #db2777 !important; /* darker pink */
+}
+
+/* COnfirm popup box */
+.p-confirm-popup {
+    @apply bg-zinc-800  border-[1px] border-zinc-300 text-white
+}
+.p-confirm-popup .p-confirm-popup-footer button:last-child{
+    @apply bg-rose-600 border-none outline-none
+}
+.p-confirm-popup .p-confirm-popup-footer button:nth-child(1){
+    @apply text-white
+}
+
+
+/* ================= Custom Scrollbar ================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b; /* zinc-950 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #3f3f46,
+    #71717a,
+    #3f3f46
+  );
+  border-radius: 999px;
+  border: 2px solid #09090b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #52525b,
+    #a1a1aa,
+    #52525b
+  );
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #71717a #09090b;
+}
+
+.dark-table .p-paginator{
+ @apply border-0! border-none! h-fit!   
+}
